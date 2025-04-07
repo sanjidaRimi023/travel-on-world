@@ -3,18 +3,19 @@ import Country from "../Country/Country";
 import "./Countries.css";
 
 const Countries = ({ countriesPromise }) => {
+  const [countCountry, setCountCountry] = useState([]);
   const countries = use(countriesPromise);
 
-  const [countCountry, setCountCountry] = useState([]);
-
   const showVisitCountry = (country) => {
-    console.log("visit some country" , country.name.common);
+    console.log("visit some country", country);
+    const newVisitCountry = [...countCountry, country];
+    setCountCountry(newVisitCountry);
   };
 
   return (
     <div>
       <h1>Travel on world : {countries.length}</h1>
-      <h2>The number of countries traveled is : {countCountry}</h2>
+      <h2>The number of countries traveled is :{countCountry.length}</h2>
 
       <div className="countries">
         {countries.map((country) => (
