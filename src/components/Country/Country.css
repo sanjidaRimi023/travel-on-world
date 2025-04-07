@@ -1,0 +1,28 @@
+.country{
+    border: 3px solid rgb(241, 2, 122);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+button{
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+.country-visited{
+    background-color: rgb(240, 200, 206);
+}
+
+  .btn-visited {
+    background-color: lightcoral;
+
+    color: white;
+  }
+  
+  .btn-not-visited {
+    background-color: gray;
+    color: black;
+  }
+  
