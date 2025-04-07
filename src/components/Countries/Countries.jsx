@@ -16,6 +16,13 @@ const Countries = ({ countriesPromise }) => {
     <div>
       <h1>Travel on world : {countries.length}</h1>
       <h2>The number of countries traveled is :{countCountry.length}</h2>
+      <ol>
+        {
+          countCountry.map(country => <li>
+            {country.name.common}
+          </li>)
+        }
+      </ol>
 
       <div className="countries">
         {countries.map((country) => (
